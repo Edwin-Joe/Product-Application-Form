@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/index.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application details</title>
+</head>
+
+<body>
+    <h1>Product Application</h1>
+    <div class="main_container">
+        <form id="form1">
+            <input id="mobileNumber" type="number" onchange="num()" placeholder="Enter 10 digit mob number"><br>
+            <input id="date" type="date" onchange="dateCheck()" placeholder="Choose Date of delivery"><br>
+            <input id="name" type="text" onchange="nameCheck()" placeholder="Enter product name"><br>
+            <input id="description" type="text" onchange="descriptionCheck()" placeholder="Enter the description"><br>
+            <input id="cost" type="number" onchange="costCheck()" placeholder="Enter the cost"><br>
+            <input id="discount" type="number" onchange="discountCheck()" placeholder="Discount in %"><br>
+            <label for="checkBox">In stock: </label>
+            <input id="checkBox" type="checkbox" onchange="stockCheck()" placeholder="In Stock"><br>
+
+
+        </form>
+        <div><button id="submit" onclick="submit()">Submit:</button><br></div>
+    </div>
+
+    <div id="details" style="display: none">
+        <p style="padding-top: 50px;">Phone number:<span id="p_num" style="font-size: larger;"></span></p>
+        <p>Date:<span id="p_date"></span></p>
+        <p>Name of product:<span id="p_name"></span></p>
+        <p>Desription:<span id="p_desc"></span></p>
+        <p>Cost of Product: <span id="p_cost"></span></p>
+        <p>Discount:<span id="p_discount"></span>%</p>
+        <p>Discounted price:<span id="p_price"></span></p>
+        <p>Stock availability:<span id="p_inStock"></span></p>
+        <a href="/index.html"><br>
+            <p style="padding-bottom: 50px;">Back<-- </p>
+        </a>
+    </div>
+
+</body>
+
+</html>

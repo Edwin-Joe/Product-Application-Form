@@ -1,0 +1,29 @@
+.main_container{
+    display: block;
+    margin-left: 80vh;
+    margin-top: 10vh;
+}
+html{
+    background-color: rgb(61, 152, 255);
+}
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: sticky;
+    margin-top: 15px;
+
+}
+#details{
+    background-color: aliceblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+#details p {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: 600;
+}
+#details p span {
+    font-weight: 100;
+}
