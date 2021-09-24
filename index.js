@@ -66,11 +66,13 @@ function show(){
 function submit() {
     document.getElementById("form1").style.display = "none";
     document.getElementById("submit").style.display = "none";
-    var actualPrice, c, d;
+    var actualPrice, c, d, x;
     c = parseFloat(cost2);
+    x = c;
     d = parseFloat(discount2);
     d = d/100;
-    actualPrice = c * d;
+    x = c * d;
+    actualPrice = c-x;
     console.log(c , d ,actualPrice);
     
     
